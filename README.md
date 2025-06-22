@@ -18,11 +18,34 @@ It is a helpful manual for navigating git world, this repo is a compilation of t
 
 ## 1. Getting Started 🚦
 
+### The Very Beginning
+
 Make sure Git is installed on your machine:
 
 ```bash
+# Check if Git is installed
 git --version
+# Output: git version 2.x.x
 ```
+*First things first - make sure Git is ready to rock!*
+
+### Creating Your First Repository
+```bash
+# Initialize a new repository
+git init
+# This Creates .git folder - the magic happens here! 
+```
+
+### Essential First Steps
+```bash
+# Check what's happening (always a good idea!)
+git status
+# Output: On branch master (or main)
+#         No commits yet
+#         nothing to commit
+```
+
+---
 ## 2. Configuration ⚙️
 
 ## 3. Initialize & Rename Default Branch 🌱
