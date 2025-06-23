@@ -128,6 +128,7 @@ git checkout -b main
 - [Interactive Git Learning](https://learngitbranching.js.org/)
 - [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
-*Made with ❤️ for developers who want to Git things done right!*
 
 # ⭐ This file is a living document. Happy coding! 🎉
+
+*Made with ❤️ for developers who want to Git things done right!*
