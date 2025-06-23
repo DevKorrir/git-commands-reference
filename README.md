@@ -168,6 +168,10 @@ git branch -vv
 
 ---
 
+## Merge Strategies & Conflict Resolution
+
+### 🤝 Basic Merging
+
 
 
 
