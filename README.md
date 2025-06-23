@@ -133,6 +133,40 @@ git checkout -b feature/new-feature
 # or
 git switch -c feature/new-feature
 ```
+### Advanced Branch Operations
+```bash
+# Rename current branch
+git branch -m new-branch-name
+
+# Rename any branch
+git branch -m old-name new-name
+
+# Copy a branch
+git checkout -b new-branch existing-branch
+
+# Delete local branch (safe - only if merged)
+git branch -d feature/completed-feature
+
+# Force delete local branch (careful! 💀)
+git branch -D feature/unwanted-feature
+
+# Delete remote branch
+git push origin --delete feature/old-feature
+```
+
+### Branch Tracking and Upstream
+```bash
+# Set upstream for current branch
+git branch --set-upstream-to=origin/main
+
+# Push new branch and set upstream
+git push -u origin feature/my-feature
+
+# See tracking branches
+git branch -vv
+```
+
+---
 
 
 
