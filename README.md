@@ -77,6 +77,43 @@ git checkout -b main
 ```
 *Modern Git uses 'main' as the default branch name!*
 
+#### Step 3: Your First Commit
+```bash
+# Create your first file
+echo "# My Awesome Project" > README.md
+
+# Add file to staging area
+git add README.md
+# Or add everything
+git add .
+
+# Make your first commit
+git commit -m "Initial commit: Added README file"
+```
+
+#### Step 4: Connect with Remote Repository
+```bash
+# Push and set upstream branch
+git push -u origin main
+# This pushes your code and sets main as the default branch
+```
+
+#### Step 5: Handling Existing Remote Repository 🤝
+```bash
+# If remote repository already has content, pull it first
+git pull origin main
+
+# If you get "fatal: refusing to merge unrelated histories"
+git pull origin main --allow-unrelated-histories
+# This merges two separate Git histories - this is very common when starting!
+```
+
+---
+
+## 🌿 Mastering Branches
+
+### Branch Management Basics
+
 
 
 
