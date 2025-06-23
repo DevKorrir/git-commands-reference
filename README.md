@@ -113,6 +113,26 @@ git pull origin main --allow-unrelated-histories
 ## 🌿 Mastering Branches
 
 ### Branch Management Basics
+```bash
+# See all branches
+git branch -a
+# * main                    (current branch marked with *)
+#   remotes/origin/main
+
+# Create new branch
+git branch feature/awesome-feature
+
+# Switch to branch (old way)
+git checkout feature/awesome-feature
+
+# Switch to branch (new way - Git 2.23+)
+git switch feature/awesome-feature
+
+# Create and switch in one command
+git checkout -b feature/new-feature
+# or
+git switch -c feature/new-feature
+```
 
 
 
