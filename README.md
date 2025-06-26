@@ -171,6 +171,37 @@ git branch -vv
 ## Merge Strategies & Conflict Resolution
 
 ### 🤝 Basic Merging
+```bash
+# Switch to target branch (usually main)
+git checkout main
+
+# Merge feature branch
+git merge feature/awesome-feature 
+
+# Delete merged branch
+git branch -d feature/awesome-feature
+```
+
+### Advanced Merge Strategies
+
+#### Accept Their Changes (Remote/Other Branch)
+```bash
+# When merging, automatically accept their changes for conflicts
+git merge feature/other-branch -X theirs
+# eg. git merge Home/animation -X theirs
+
+# Or during pull
+git pull origin main -X theirs
+```
+
+#### Keep Your Changes (Local)
+```bash
+# When merging, prefer your local changes
+git merge feature/other-branch -X ours
+
+# During pull
+git pull origin main -X ours
+```
 
 
 
