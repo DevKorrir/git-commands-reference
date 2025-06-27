@@ -239,7 +239,7 @@ Feature:     --C--D--E--F-----
 
 ```
 
-### 🔧 Handling Merge Conflicts Like a Pro
+### 🔧 Handling Merge Conflicts Like a Pro (When Git gets confused!)
 
 #### When Conflicts Happen 💥
 ```bash
