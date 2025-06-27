@@ -288,6 +288,7 @@ git mergetool
 git merge --abort
 # Returns to state before merge attempt
 ```
+---
 
 
 
@@ -304,13 +305,21 @@ git merge --abort
 
 
 
-## 2. Configuration ⚙️
 
-## 3. Initialize & Rename Default Branch 🌱
+## 🌐 Remote Repository Mastery
 
-## 4. Basic Workflow 🔄
+### 🔗 Managing Multiple Remotes
+```bash
+# Add multiple remotes
+git remote add upstream https://github.com/original/repo.git
+git remote add fork https://github.com/yourusername/repo.git
 
-## 5. Remote Repositories ☁️
+# List all remotes
+git remote -v
+
+# Remove remote
+git remote remove upstream
+```
 
 ## 6. Branching 🌳
 
