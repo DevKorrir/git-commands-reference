@@ -267,6 +267,28 @@ git add conflicted-file.txt
 git commit -m " Merge feature/branch-name"
 ```
 
+#### Automated Conflict Resolution
+```bash
+# Accept all their changes
+git checkout --theirs .
+git add .
+git commit
+
+# Accept all your changes
+git checkout --ours .
+git add .
+git commit
+
+# Use merge tool
+git mergetool
+```
+
+#### Abort Merge (Emergency Exit! 🚨)
+```bash
+git merge --abort
+# Returns to state before merge attempt
+```
+
 
 
 
