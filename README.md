@@ -202,6 +202,42 @@ git merge feature/other-branch -X ours
 # During pull
 git pull origin main -X ours
 ```
+#### No Fast-Forward Merge (Create Merge Commit)
+```bash
+git merge --no-ff feature/awesome-feature
+# Always creates a merge commit, preserving branch history
+
+Main: --A--B--------------------M (Merge commit)
+            \                  /
+Feature:     --C--D--E--F-----
+
+# When you do git merge --no-ff feature while on Main, Git combines F's changes into Main, but instead of just moving Main's pointer to F (which would be a "fast-forward"), it creates a new commit M.
+
+# --no-ff: Keeps all individual feature branch commits, adds a new merge commit. (Detailed, explicit merge history)
+
+# In essence, merging a Pull Request on most hosting platforms is the remote equivalent of performing a git merge --no-ff locally.
+```
+
+#### Squash Merge (Clean History)
+```bash
+git merge --squash feature/many-commits
+git commit -m "Add awesome feature with many commits"
+
+# Combines all commits from feature branch into one commit
+
+Main: --A--B------------------S (Squash commit)
+            \
+Feature:     --C--D--E--F-----
+
+# Git takes all the changes introduced by C, D, E, and F and bundles them together as if they were one single change.
+
+# It then applies that combined change to Main as a single new commit (S), which you then explicitly create with git commit.
+
+# The individual commits C, D, E, F are not preserved in the Main branch's history; only their combined effect appears as S.
+
+# --squash: Combines all feature branch commits into one single commit on the target branch. (Clean, simplified history)
+
+```
 
 
 
