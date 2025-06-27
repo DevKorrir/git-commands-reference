@@ -5,18 +5,18 @@ It is a helpful manual for navigating git world, this repo is a compilation of t
 
 ## Table of Contents
 
-- [🏗️ Starting Your Git Journey](#️-starting-your-git-journey)
-- [🔄 The Complete Workflow](#-the-complete-workflow)
-- [🌿 Mastering Branches](#-mastering-branches)
-- [🔀 Merge Strategies & Conflict Resolution](#-merge-strategies--conflict-resolution)
-- [🌐 Remote Repository Mastery](#-remote-repository-mastery)
-- [↩️ Time Travel: Undoing & Fixing](#️-time-travel-undoing--fixing)
-- [🕵️ Investigation & Information](#️-investigation--information)
-- [📦 Stashing & Temporary Storage](#-stashing--temporary-storage)
-- [🎯 Advanced Git Techniques](#-advanced-git-techniques)
-- [⚙️ Configuration & Customization](#️-configuration--customization)
-- [🆘 Emergency Git Commands](#-emergency-git-commands)
-- [💎 Pro Tips & Best Practices](#-pro-tips--best-practices)
+- [ Starting Your Git Journey](#️-starting-your-git-journey)
+- [ The Complete Workflow](#-the-complete-workflow)
+- [ Mastering Branches](#-mastering-branches)
+- [ Merge Strategies & Conflict Resolution](#-merge-strategies--conflict-resolution)
+- [ Remote Repository Mastery](#-remote-repository-mastery)
+- [ Time Travel: Undoing & Fixing](#️-time-travel-undoing--fixing)
+- [ Investigation & Information](#️-investigation--information)
+- [ Stashing & Temporary Storage](#-stashing--temporary-storage)
+- [ Advanced Git Techniques](#-advanced-git-techniques)
+- [ Configuration & Customization](#️-configuration--customization)
+- [ Emergency Git Commands](#-emergency-git-commands)
+- [ Pro Tips & Best Practices](#-pro-tips--best-practices)
 
 ---
 
