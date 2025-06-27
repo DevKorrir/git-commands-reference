@@ -239,6 +239,34 @@ Feature:     --C--D--E--F-----
 
 ```
 
+### 🔧 Handling Merge Conflicts Like a Pro
+
+#### When Conflicts Happen 💥
+```bash
+# After a failed merge, check status
+git status
+# Shows files with conflicts
+
+# See conflicted files
+git diff --name-only --diff-filter=U
+```
+
+#### Manual Conflict Resolution
+```bash
+# Open conflicted file - you'll see:
+# <<<<<<< HEAD
+# Your changes
+# =======
+# Their changes
+# >>>>>>> branch-name
+
+# After editing, mark as resolved
+git add conflicted-file.txt
+
+# Complete the merge
+git commit -m " Merge feature/branch-name"
+```
+
 
 
 
