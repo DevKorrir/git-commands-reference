@@ -5,14 +5,18 @@ It is a helpful manual for navigating git world, this repo is a compilation of t
 
 ## Table of Contents
 
-1. [Getting Started](#getting-started)  
-2. [Configuration](#configuration)  
-3. [Initialise a Repository](#initialise-a-repository)  
-4. [Basic Workflow](#basic-workflow)  
-5. [Branches](#branches)  
-6. [Merging & Rebasing](#merging--rebasing)  
-7. [Remote Repositories](#remote-repositories)  
-8. [Tips & Troubleshooting](#tips--troubleshooting)  
+- [🏗️ Starting Your Git Journey](#️-starting-your-git-journey)
+- [🔄 The Complete Workflow](#-the-complete-workflow)
+- [🌿 Mastering Branches](#-mastering-branches)
+- [🔀 Merge Strategies & Conflict Resolution](#-merge-strategies--conflict-resolution)
+- [🌐 Remote Repository Mastery](#-remote-repository-mastery)
+- [↩️ Time Travel: Undoing & Fixing](#️-time-travel-undoing--fixing)
+- [🕵️ Investigation & Information](#️-investigation--information)
+- [📦 Stashing & Temporary Storage](#-stashing--temporary-storage)
+- [🎯 Advanced Git Techniques](#-advanced-git-techniques)
+- [⚙️ Configuration & Customization](#️-configuration--customization)
+- [🆘 Emergency Git Commands](#-emergency-git-commands)
+- [💎 Pro Tips & Best Practices](#-pro-tips--best-practices)
 
 ---
 
