@@ -324,20 +324,7 @@ git remote remove upstream
 
 
 
-## 🌐 Remote Repository Mastery
 
-### 🔗 Managing Multiple Remotes
-```bash
-# Add multiple remotes
-git remote add upstream https://github.com/original/repo.git
-git remote add fork https://github.com/yourusername/repo.git
-
-# List all remotes
-git remote -v
-
-# Remove remote
-git remote remove upstream
-```
 
 ## 6. Branching 🌳
 
