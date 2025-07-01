@@ -307,6 +307,7 @@ git remote -v
 
 # Remove remote
 git remote remove upstream
+```
 
 
 
