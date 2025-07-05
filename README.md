@@ -384,6 +384,57 @@ git branch -M main
 git push -u origin main
 ```
 
+### Fetching and Pulling Strategies
+```bash
+# Fetch all branches from all remotes
+git fetch --all
+
+# Fetch specific remote
+git fetch origin
+
+# Fetch and prune deleted remote branches
+git fetch --prune
+# If a branch was deleted on the remote, this command cleans up your local list
+# of remote branches to match. It's like throwing away old, unused address books!
+
+# Pull with rebase (cleaner history)
+git pull --rebase origin main
+# no need for "merge commit"
+
+# Pull specific branch
+git pull origin feature/specific-branch
+# This command downloads changes specifically from 'feature/specific-branch' on the remote
+# this merges into your *current* local branch. Make sure you're on the right branch!
+```
+
+### Advanced Push Operations
+```bash
+# Push all branches
+git push --all origin
+
+# Push tags
+git push --tags
+
+# Force push (be very careful! ⚠️)
+git push --force origin main
+# this is like : : "I know what I'm doing, overwrite everything!"
+
+# Safer force push
+git push --force-with-lease origin main
+# Force push, but only if no one else has touched it!. If someone else pushed changes to the remote main since you last pulled, this command will fail, protecting their work.
+
+# Push new branch
+git push -u origin feature/new-branch
+
+# Push to different branch name
+git push origin local-branch:remote-branch
+# Eg: git push origin develop:staging would push your local develop branch to a remote branch named staging.
+```
+
+---
+
+## Time Travel: Undoing & Fixing
+
 
 
 
