@@ -401,11 +401,12 @@ git push -u origin main
 
 
 
-## 6. Branching 🌳
 
-## 7. Merging & Advanced Options 🤝
 
-## 8. Tips & Troubleshooting 🛠️
+
+
+
+
 
 ### 🌟 Remember the Golden Rules:
 1. **Commit early, commit often** 📝
