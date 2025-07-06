@@ -4,6 +4,7 @@ It is a helpful manual for navigating git world, this repo is a compilation of t
 ---
 
 ## Table of Contents
+git rm --cached app/google-services.json
 
 - [ Starting Your Git Journey](#️-starting-your-git-journey)
 - [ The Complete Workflow](#-the-complete-workflow)
