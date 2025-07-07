@@ -435,6 +435,42 @@ git push origin local-branch:remote-branch
 ---
 
 ## Time Travel: Undoing & Fixing
+### Working Directory Changes
+```bash
+# Discard changes in specific file
+git checkout -- filename.txt
+# The -- is important here; it tells Git that what follows are file paths, not branch names.
+# or (newer syntax)
+git restore filename.txt
+
+# Discard all changes in working directory
+git checkout -- .
+# or                 The . means "all files in the current directory and its subdirectories." 
+git restore .
+
+# If a file was staged (you git added it but didn't git commit it), these commands will also revert it back to its state in the last commit, removing it from the staging area.
+# They DO NOT affect untracked files.
+
+
+# Remove untracked files
+git clean -f
+# Rmoves all untracked files from your current folder and it does not remove untracked folders or directories. If you have an empty folder or a folder with untracked files inside it, git clean -f will not remove the folder itself, only untracked files
+
+# Remove untracked files and directories
+git clean -fd
+# -f (force)
+# -d (directories)
+# By default it will still respect yout .gitignore file.
+
+# Preview what will be removed
+git clean -n
+# This command is a "dry run". It shows you what files and directories would be removed if you run git clean -f or git clean -fd. It doesn't actually delete anything.
+
+# Untrack Specific file
+git rm --cached <file>
+# git rm --cached app/google-services.json
+# Untrack a specific file that Git is currently tracking, keeping the file on your local disk. It's about changing Git's knowledge of the file, not necessarily about "cleaning up" loose items.
+```
 
 
 
