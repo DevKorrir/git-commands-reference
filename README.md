@@ -4,7 +4,6 @@ It is a helpful manual for navigating git world, this repo is a compilation of t
 ---
 
 ## Table of Contents
-git rm --cached app/google-services.json
 
 - [ Starting Your Git Journey](#️-starting-your-git-journey)
 - [ The Complete Workflow](#-the-complete-workflow)
@@ -471,6 +470,120 @@ git rm --cached <file>
 # git rm --cached app/google-services.json
 # Untrack a specific file that Git is currently tracking, keeping the file on your local disk. It's about changing Git's knowledge of the file, not necessarily about "cleaning up" loose items.
 ```
+
+### Staging Area Operations
+```bash
+# Unstage specific file
+git reset HEAD filename.txt
+# or (newer syntax)
+git restore --staged filename.txt
+
+# Unstage all files
+git reset HEAD
+# or
+git restore --staged .
+```
+
+### Commit History Manipulation
+
+#### Soft Reset (Keep Changes)
+```bash
+# Undo last commit, keep changes staged
+git reset --soft HEAD~1
+
+# Undo multiple commits
+git reset --soft HEAD~3
+```
+
+#### Mixed Reset (Default)
+```bash
+# Undo last commit, keep changes in working directory
+git reset HEAD~1
+
+# Reset to specific commit
+git reset abc1234
+```
+
+#### Hard Reset (Nuclear Option! 💀)
+```bash
+# DANGER: Permanently lose all changes
+git reset --hard HEAD~1
+
+# Reset to specific commit (lose everything after)
+git reset --hard abc1234
+
+# Reset to remote state
+git reset --hard origin/main
+```
+
+#### Safe Undoing with Revert
+```bash
+# Create new commit that undoes changes
+git revert HEAD
+
+# Revert specific commit
+git revert abc1234
+
+# Revert merge commit
+git revert -m 1 merge-commit-hash
+```
+
+---
+
+## 🕵️ Investigation & Information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
