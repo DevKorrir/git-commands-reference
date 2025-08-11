@@ -17,6 +17,7 @@ It is a helpful manual for navigating git world, this repo is a compilation of t
 - [ Configuration & Customization](#️-configuration--customization)
 - [ Emergency Git Commands](#-emergency-git-commands)
 - [ Pro Tips & Best Practices](#-pro-tips--best-practices)
+- git config --system core.longpaths true
 
 ---
 
