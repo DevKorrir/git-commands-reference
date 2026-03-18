@@ -6,18 +6,18 @@
 
 ## 🗺️ Table of Contents
 
-1. [Getting Started](#1-getting-started-)
-2. [The Complete Workflow](#2-the-complete-workflow-)
-3. [Mastering Branches](#3-mastering-branches-)
-4. [Merge Strategies & Conflict Resolution](#4-merge-strategies--conflict-resolution-)
-5. [Remote Repository Mastery](#5-remote-repository-mastery-)
-6. [Time Travel: Undoing & Fixing](#6-time-travel-undoing--fixing-️)
-7. [Investigation & Information](#7-investigation--information-️)
-8. [Stashing & Temporary Storage](#8-stashing--temporary-storage-)
-9. [Advanced Git Techniques](#9-advanced-git-techniques-)
-10. [Configuration & Customization](#10-configuration--customization-️)
-11. [Emergency Git Commands](#11-emergency-git-commands-)
-12. [Pro Tips & Best Practices](#12-pro-tips--best-practices-)
+1. [Getting Started](#1-getting-started)
+2. [The Complete Workflow](#2-the-complete-workflow)
+3. [Mastering Branches](#3-mastering-branches)
+4. [Merge Strategies & Conflict Resolution](#4-merge-strategies--conflict-resolution)
+5. [Remote Repository Mastery](#5-remote-repository-mastery)
+6. [Time Travel: Undoing & Fixing](#6-time-travel-undoing--fixing)
+7. [Investigation & Information](#7-investigation--information)
+8. [Stashing & Temporary Storage](#8-stashing--temporary-storage)
+9. [Advanced Git Techniques](#9-advanced-git-techniques)
+10. [Configuration & Customization](#10-configuration--customization)
+11. [Emergency Git Commands](#11-emergency-git-commands)
+12. [Pro Tips & Best Practices](#12-pro-tips--best-practices)
 
 ---
 
@@ -420,7 +420,7 @@ git pull --rebase origin main
 git pull origin feature/specific-branch
 ```
 
-> 💡 **Tip:** `git fetch` is always safe — it downloads info but never changes your working files. `git pull` = `git fetch` + `git merge`.
+> 💡 **Tip:** `git fetch` is always safe — it downloads info but never changes your working files. `git pull` = `git fetch` + merge (or rebase), depending on your configuration/flags.
 
 ### Advanced Push Operations
 
@@ -667,7 +667,7 @@ git stash
 # Your working directory is now clean!
 
 # Stash with a descriptive message
-git stash save "WIP: half-done login feature"
+git stash push -m "WIP: half-done login feature"
 
 # List all your stashes
 git stash list
@@ -719,7 +719,7 @@ git stash branch feature/from-stash stash@{0}
 
 ```
 1. You're working on feature X...
-   git stash save "WIP: feature X"
+   git stash push -m "WIP: feature X"
 
 2. Switch to fix an urgent bug on main:
    git checkout main
