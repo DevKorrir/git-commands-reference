@@ -13,8 +13,8 @@
 git stash
 # Your working directory is now clean!
 
-# Stash with a descriptive message
-git stash save "WIP: half-done login feature"
+# Stash with a descriptive message (modern syntax)
+git stash push -m "WIP: half-done login feature"
 
 # List all your stashes
 git stash list
@@ -72,7 +72,7 @@ git stash branch feature/from-stash stash@{0}
 
 ```
 1. You're working on feature X...
-   git stash save "WIP: feature X"
+   git stash push -m "WIP: feature X"
 
 2. Switch to fix an urgent bug on main:
    git checkout main

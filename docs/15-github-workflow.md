@@ -15,7 +15,7 @@ github.com/owner/project    →    github.com/you/project
         │                         git clone ↓
         │                         Your Local Computer
         │                               │
-        └── sync updates ◄── git pull upstream/main
+        └── sync updates ◄── git pull upstream main
                                         │
                                   make changes
                                   git push origin

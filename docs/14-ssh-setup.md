@@ -9,12 +9,12 @@
 ## How SSH Authentication Works
 
 ```
-Your Computer                      GitHub
-┌─────────────────┐                ┌──────────────────┐
-│  Private Key 🔑 │ ─── proves ──► │  Public Key 🔓   │
-│  (~/.ssh/id_ed) │    identity    │  (in your        │
-│  NEVER share!   │                │   GitHub account) │
-└─────────────────┘                └──────────────────┘
+Your Computer                           GitHub
+┌──────────────────────┐                ┌──────────────────┐
+│  Private Key 🔑      │ ─── proves ──► │  Public Key 🔓   │
+│  (~/.ssh/id_ed25519) │    identity    │  (in your        │
+│  NEVER share!        │                │   GitHub account) │
+└──────────────────────┘                └──────────────────┘
 ```
 
 Your **private key** stays on your machine forever. Your **public key** is uploaded to GitHub. They match together like a lock and key.
