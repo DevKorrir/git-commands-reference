@@ -47,12 +47,12 @@ git status
 │                    GIT WORKFLOW                         │
 │                                                         │
 │  Working Dir   Staging Area    Local Repo    Remote     │
-│  (your files)  (git add)       (git commit)  (GitHub)  │
+│  (your files)  (git add)       (git commit)  (GitHub)   │
 │                                                         │
-│  [Edit files] ──git add──► [Staged] ──git commit──►    │
+│  [Edit files] ──git add──► [Staged] ──git commit──►     │
 │                                          [Committed]    │
-│                                               │          │
-│  [Updated] ◄──git pull──            git push──►        │
+│                                               │         │
+│  [Updated] ◄──git pull──            git push──►         │
 │                            [Remote Repo (origin)]       │
 └─────────────────────────────────────────────────────────┘
 ```
